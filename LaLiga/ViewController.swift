@@ -52,19 +52,11 @@ class ViewController: UIViewController {
        func runCountdown() {
            Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
        }
-
-    
-    
-//    init(punkteStand: UILabel!) {
-//        self.punkteStand = punkteStand
-//    }
-
     
    
     
     @IBAction func addPoints(_ sender: UIButton) {
 //        if (punkte == 0){
-//            punkte += 1
 //            decreasePoints()
 //        }
         punkte += 1
@@ -108,8 +100,7 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        //viewDidAppear(false)
-        //super.viewDidLoad()
+
         
        updateTime()
         
